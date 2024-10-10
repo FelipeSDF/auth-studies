@@ -1,0 +1,52 @@
+<header>
+
+    <div class="pc">
+        <ul class="global-header  container container-arounded">
+            <div class="global-header-logo-container container container">
+                {% comment %} <img src="https://static.vecteezy.com/system/resources/thumbnails/018/868/329/small_2x/red-heart-symbol-on-transparent-background-free-png.png" alt="image" class="global-header-logo" /> {% endcomment %}
+                <ion-icon name="heart"></ion-icon>
+            </div>
+
+            <li class="global-header-list-group container">
+                <a href="{% url 'home' %}" class="global-header-anchor-links">Home</a>
+            </li>
+            <li class="global-header-list-group container">
+                <a href="{% url 'post' %}" class="global-header-anchor-links">New Post</a>
+            </li>
+            <li class="global-header-list-group container">
+                <a href="{% url 'auth:login' %}" class="global-header-anchor-links">login</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mobile">
+        <ul class="global-header  container container-arounded">
+            <div class="global-header-logo-container container container">
+                {% comment %} <img src="https://static.vecteezy.com/system/resources/thumbnails/018/868/329/small_2x/red-heart-symbol-on-transparent-background-free-png.png" alt="image" class="global-header-logo" /> {% endcomment %}
+                <ion-icon name="heart"></ion-icon>
+            </div>
+
+            <button id="burguer-container" class="burger-container-hidde">
+                <div class="burguer-element"></div>
+                <div class="burguer-element"></div>
+                <div class="burguer-element"></div>
+            </button>
+            
+            <div id="burguer-menu-container" class="burger-menu-hidde">
+
+                <li class="global-header-list-group container">
+                    <a href="{% url 'home' %}" class="global-header-anchor-links">Home</a>
+                </li>
+                <li class="global-header-list-group container">
+                    <a href="{% url 'post' %}" class="global-header-anchor-links">New Post</a>
+                </li>
+                <li class="global-header-list-group container">
+                    <a href="{% url 'auth:login' %}" class="global-header-anchor-links">login</a>
+                </li> 
+
+            </div>
+        </ul>
+    </div>
+</header>
+    </header>
+    

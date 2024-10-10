@@ -1,0 +1,6 @@
+@import url(./partials/login.css);
+@import url(./partials/register.css);
+
+body{
+    background-color: var(--color-primary-dark);
+}

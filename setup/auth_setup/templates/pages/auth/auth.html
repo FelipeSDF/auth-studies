@@ -1,0 +1,23 @@
+{% extends 'pages/global/base.html' %}
+
+
+{% block content_logged %}
+
+<div class=" container warning-full-view">
+    <h1>voce ja está logado como {{request.user.username}}</h1>
+</div>
+
+{% endblock content_logged %}
+
+
+{% block content_no_logged %}
+
+
+{% if LoginForm %}
+    {% include 'pages/auth/partials/loginform.html' %}
+{% endif %}
+
+{% if RegisterForm %}
+    {% include 'pages/auth/partials/registerform.html' %}
+{% endif %}
+{% endblock content_no_logged %}

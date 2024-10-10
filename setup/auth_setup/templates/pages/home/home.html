@@ -1,0 +1,13 @@
+{% extends 'pages/global/base.html' %}
+{% load static %}
+{% block content_logged %}
+<div class='card-container container container-arounded'>
+    {% for card in cards %}
+    {% include 'pages/home/partials/cards.html' %}
+    {% endfor %}
+</div>
+{% endblock content_logged %}
+
+
+</body>
+</html>

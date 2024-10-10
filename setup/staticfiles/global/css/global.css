@@ -1,0 +1,39 @@
+@import url(./partials/header.css);
+@import url(./partials/footer.css);
+/* reset css */
+*{
+    /* border: solid 1px; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    box-sizing: border-box;
+    font-family: var(--font-family-title);
+}
+body{
+    height: 100vh;
+}
+main{
+    height: 100%;
+}
+:root{
+    --color-primary: red;
+    --color-primary-light:rgb(149, 5, 5) ;
+    --color-primary-dark:rgb(45, 1, 1) ;
+
+    --contrast-color: rgb(255, 255, 255);
+
+    --font-family-title: 'verdana', sans-serif;
+    --font-size-title: 1rem
+}
+/* :root{
+    --color-primary: blue;
+    --color-primary-light:rgb(5, 5, 149) ;
+    --color-primary-dark:rgb(1, 1, 45) ;
+
+    --contrast-color: white;
+
+    --font-family-title: 'verdana', sans-serif;
+    --font-size-title: 1rem
+} */

@@ -1,0 +1,27 @@
+@media (min-width:800px){
+    footer{
+            display: none;
+            background-color: var(--contrast-color);
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        footer>section{
+            width: 30%;
+            height: 5rem;
+        }
+    }
+
+@media (max-width:800px){
+footer{
+        display: none;
+        background-color: var(--contrast-color);
+        width: 100%;
+        position: relative;
+        bottom: 0%;
+    }
+    footer>section{
+        width: 30%;
+        height: 10rem;
+    }
+}

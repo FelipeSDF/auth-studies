@@ -1,0 +1,6 @@
+#form_date_input{
+    font-size: calc(var(--font-size-title)/2);
+}
+#form_textarea_input{
+    font-size: calc(var(--font-size-title) *2);
+}

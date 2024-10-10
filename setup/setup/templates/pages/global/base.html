@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% if request.user.is_authenticated == True %}
+<head>
+    {% include 'pages/global/partials/head.html' %}
+</head>
+<body>
+    {% include 'pages/global/partials/header.html' %}
+
+    <main class="container">
+    {% block content_logged %}
+    
+
+    {% endblock content_logged %}
+
+    {% include 'pages/global/partials/footer.html' %}
+    </main>
+
+    {% include 'pages/global/partials/scripts.html' %}
+    </body>
+
+{% else %}
+
+<head>
+    {% include 'pages/global/partials/head.html' %}
+</head>
+<body class="container">
+    <main class="container">
+        
+        {% block content_no_logged %}
+        {% endblock content_no_logged %}
+    </main>
+    
+{% block scripts %}{% endblock scripts %}
+    
+</body>
+{% endif %}
+</html>

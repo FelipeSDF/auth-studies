@@ -1,0 +1,21 @@
+<form action="posted" method="POST" id="post-form" class="container container-arounded">
+{% csrf_token %}
+{% for field in PostForm %}
+<div class="form-group container container-arounded">
+    <div class="container">
+    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+    </div>
+
+    <div class="container container-arounded">
+    {{ field }}
+
+    {% if field.errors %}
+        <div class="container">{{ field.errors }}</div>
+    {% endif %}
+    </div>
+</div>
+{% endfor %}
+<div class="form-group container form-button-send-container">
+<button type="submit" class="form-button-send">Enviar</button>
+</div>
+</form>
