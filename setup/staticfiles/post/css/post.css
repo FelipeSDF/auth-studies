@@ -1,6 +1,156 @@
-#form_date_input{
-    font-size: calc(var(--font-size-title)/2);
+@media (min-width:800px){
+    #post-form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        width: 50rem;
+        height: max-content;
+        background-color: var(--contrast-color);
+        border-radius: 1rem;
+        padding: 2rem;
+        gap:2rem;
+        z-index: 0;
+        box-shadow: var(--color-primary) 5px 5px 5px;
+    }
+
+    #form_date_input{
+        font-size: calc(var(--font-size-title));
+    }
+    #form_textarea_input{
+        font-size: calc(var(--font-size-title)*2);
+        width: 100%;
+        padding: 1rem;
+    }
+    #post-form > .container > .container{
+        flex-direction: row;
+        width: 100%;
+    }
+    #post-form > .container > .container > label{
+        text-align: center;
+        width: fit-content;
+        font-size:calc(var(--font-size-title)*1.5);
+        color: var(--color-primary-dark);
+    }
+    #post-form > .container > .container > select{
+        width: 100%;
+        height: 2rem;
+        font-size: calc(var(--font-size-title)*1.5);
+        text-align: center;
+    }
+    #post-form > .container > .container > .form_field_input{
+        width: 100%;
+        height: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+        color: var(--color-primary-light);
+        box-shadow: var(--color-primary-dark) 2.5px 2.5px 3px;
+
+    }
+    #post-form >.form-group{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .form-button-send-container{
+        height: 50%;
+    }
+    .form-group > button{
+        width: 70%;
+        height: 70%;
+        font-size: calc(var(--font-size-title)*2);
+        background-color: var(--contrast-color);
+        border: none;
+        color: var(--color-primary-dark);
+        border-radius: 1rem;
+    }
+
+    .form-group > button:hover{
+        background-color: var(--color-primary-dark);
+        color: var(--contrast-color);
+    }
+
+    .errorlist>li{
+        color: var(--color-primary);
+        border-radius: 1rem;
+    }
 }
-#form_textarea_input{
-    font-size: calc(var(--font-size-title) *2);
+@media (max-width:800px){
+    #post-form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        width: 20rem;
+        height: max-content;
+        background-color: var(--contrast-color);
+        border-radius: 1rem;
+        padding: 2rem;
+        gap:2rem;
+        z-index: 0;
+    }
+
+    #form_date_input{
+        font-size: calc(var(--font-size-title));
+    }
+    #form_textarea_input{
+        font-size: calc(var(--font-size-title));
+        width: 100%;
+        padding: 1rem;
+    }
+    #post-form > .container > .container{
+        flex-direction: row;
+        width: 100%;
+    }
+    #post-form > .container > .container > label{
+        text-align: center;
+        width: fit-content;
+        font-size: calc(var(--font-size-title));
+        color: var(--color-primary-dark);
+    }
+    #post-form > .container > .container > select{
+        width: 100%;
+        height: 2rem;
+        font-size: var(--font-size-title);
+        text-align: center;
+    }
+    #post-form > .container > .container > .form_field_input{
+        width: 100%;
+        height: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+        color: var(--color-primary-light);
+        box-shadow: var(--color-primary-dark) 2.5px 0px 0px 0px;
+
+    }
+    .form-group{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .form-button-send-container{
+        height: 50%;
+    }
+    .form-group > button{
+        width: 70%;
+        height: 70%;
+        font-size: calc(var(--font-size-title)*2);
+        background-color: var(--contrast-color);
+        border: none;
+        color: var(--color-primary-dark);
+        border-radius: 1rem;
+    }
+
+    .form-group > button:hover{
+        background-color: var(--color-primary-dark);
+        color: var(--contrast-color);
+    }
+
+    .errorlist>li{
+        color: var(--color-primary);
+        border-radius: 1rem;
+    }
 }

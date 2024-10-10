@@ -11,12 +11,7 @@
     box-sizing: border-box;
     font-family: var(--font-family-title);
 }
-body{
-    height: 100vh;
-}
-main{
-    height: 100%;
-}
+
 :root{
     --color-primary: red;
     --color-primary-light:rgb(149, 5, 5) ;
@@ -27,6 +22,39 @@ main{
     --font-family-title: 'verdana', sans-serif;
     --font-size-title: 1rem
 }
+
+body{
+    height: 100vh;
+    padding-bottom: 3rem;
+}
+main{
+    height: fit-content;
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-arounded {
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.hidden-effect {
+    opacity: 0;
+    transform: translateY(-10px)
+}
+
+.show-effect {
+    display: block;
+    overflow: hidden;
+    opacity: 1;
+    filter: blur(0);
+    transition: 0.5s;
+    transform: translateY(0)
+}
+
 /* :root{
     --color-primary: blue;
     --color-primary-light:rgb(5, 5, 149) ;
